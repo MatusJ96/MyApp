@@ -34,6 +34,12 @@ namespace MyApp.ViewModel
                 Items.Remove(s);
             }
         }
+
+        [RelayCommand]
+        async Task Save(string s)
+        {
+            await Shell.Current.GoToAsync($"{nameof(ItemsPage)}?Name={s}");
+        }
     }
 }
 

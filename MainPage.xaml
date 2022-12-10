@@ -24,6 +24,12 @@
                                        CommandParameter="{Binding .}"
                                        BackgroundColor="Red"/>
                         </SwipeView.RightItems>
+                        <SwipeView.LeftItems>
+                            <SwipeItem Text="Save" 
+                                       Command="{Binding BindingContext.SaveCommand, Source={x:Reference ThisPage}}"
+                                       CommandParameter="{Binding .}"
+                                       BackgroundColor="LightGreen"/>
+                        </SwipeView.LeftItems>
                         <Grid Padding="5">
                             <Frame>
                                 <Label Text="{Binding .}" FontSize="24"/>

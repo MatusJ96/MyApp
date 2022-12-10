@@ -11,13 +11,8 @@
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
         </Tab>
         <Tab Title="SecondPage" Icon="playlist_music.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Route="SecondPage"/>
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" Route="ItemsPage"/>
         </Tab>
     </TabBar>
-    
-    <!--<ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
 
 </Shell>
